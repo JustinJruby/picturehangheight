@@ -16,8 +16,8 @@
   </HEAD>
   <script>
     $("#calculate").click(function(){
-      var pic_height = parseInt$("#picture-height").val(),10)/2;
-      var down = parseInt$("hanger-distance").val(),10);
+      var pic_height = parseInt($("#picture-height").val(),10)/2;
+      var down = parseInt($("hanger-distance").val(),10);
       var new_height = 57 +(pic_height - down);
       $("#nail-height").text(new_height);
       $("#answer").show();
