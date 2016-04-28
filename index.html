@@ -15,6 +15,7 @@
 
   </HEAD>
   <script>
+  $( document ).ready(function() {
     $("#calculate").click(function(){
       var pic_height = parseInt($("#picture-height").val(),10)/2;
       var down = parseInt($("#hanger-distance").val(),10);
@@ -22,7 +23,7 @@
       $("#nail-height").text(new_height);
       $("#answer").removeClass("hidden");
     })
-    
+  }
   </script>
   <style>
   .panel-primary{
