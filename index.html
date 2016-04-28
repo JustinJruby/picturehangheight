@@ -16,8 +16,8 @@
   </HEAD>
   <script>
     $("#calculate").click(function(){
-      var pic_height = $("#picture-height").val()/2;
-      var down = $("hanger-distance").val();
+      var pic_height = parseInt$("#picture-height").val(),10)/2;
+      var down = parseInt$("hanger-distance").val(),10);
       var new_height = 57 +(pic_height - down);
       $("#nail-height").text(new_height);
       $("#answer").show();
@@ -32,12 +32,12 @@
         <div class="panel-body">
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">height of picture</span>
-            <input id="picture-height" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            <input id="picture-height" type="number" class="form-control" placeholder="" aria-describedby="basic-addon1">
           </div>
 
           <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">distance from the top of the picture to top of the wire</span>
-            <input id="hanger-distance" type="text" class="form-control" placeholder="" aria-describedby="basic-addon1">
+            <input id="hanger-distance" type="number" class="form-control" placeholder="" aria-describedby="basic-addon1">
           </div>
           
           <button id="calculate" type="button" class="btn btn-default btn-lg">
