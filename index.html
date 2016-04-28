@@ -8,9 +8,8 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-2.2.3.min.js"  crossorigin="anonymous"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://code.jquery.com/jquery-2.2.3.min.jscrossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"  crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
@@ -20,7 +19,7 @@
       var pic_height = $("#picture-height").val()/2;
       var down = $("hanger-distance").val();
       var new_height = 57 +(pic_height - down);
-      $("#picture-height").text(new_height);
+      $("#nail-height").text(new_height);
       $("#answer").show();
     })
     
@@ -50,7 +49,7 @@
     </div>
      <div id="answer" class="hidden jumbotron">
             <h1>Picture Ready</h1>  
-            <p>Hang your picture <span id="picture-height"></span></p>
+            <p>Hang your picture <span id="nail-height"></span></p>
       </div>
       
   </BODY>
